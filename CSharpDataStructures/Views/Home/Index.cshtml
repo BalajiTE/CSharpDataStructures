@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">    
+    <p align="justify">
+        <b><u>System.Collections</u></b> is the .NET framework library used to represent the implementation and usage of DataStructures.
+        <br /><br />
+        A collection is a structured data type that stores data and provides operations for adding data to the collection,
+        removing data from the collection, updating data in the collection, as well as operations for setting and returning
+        the values of different attributes of the collection. Collections can be broken down as below: 
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Linear Collections</h2>
+        <p align="justify">
+            A Linear collection is a list of elements where one element follows the previous element. Elements in a linear
+            collection are normally ordered by position, i.e. first, second, third etc.  grocery list is an example of this 
+            type of collection.
+        </p>
+        <p align="justify">
+            Linear collections can be either Direct access collections or Sequential access collections.
+        </p>        
+        <p><a class="btn btn-default" href="@Url.Action("Home", "Linear")">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Nonlinear Collections</h2>
+        <p align="justify">
+            A Nonlinear collection hold elements that do not have a positional order within the collection. 
+            An organizational chart is an example of nonlinear collection.
+        </p>
+        <p align="justify">
+            Nonlinear collections can be either Hierarchical or Grouped collections.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Home", "Nonlinear")">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Algorithms</h2>
+        <p>Explore more algorithms like Binary search, sorting etc.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>

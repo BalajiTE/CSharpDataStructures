@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Linear Collections";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h4>Linear Collections</h4>
+<p align="justify">
+    A Linear collection is a list of elements where one element follows the previous element. Elements in a linear
+    collection are normally ordered by position. Linear collections can be either Direct access collections or
+    Sequential access collections.
+</p>
+<div class="row">
+    <div class="col-md-2">
+        <nav class="navbar navbar-left" role="navigation">
+            <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                        <ul class="nav navbar-nav" id="sidenav01">
+                            <li class="active">
+                                Data Access
+                                <div id="toggleDataAccess" style="height: auto;width:150px;">
+                                    <div class="form-group" style="margin-bottom:6px;">
+                                        <div>
+                                            <a href="#/bwTest" style="margin-left:10px;"><small>Array</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwUAT" style="margin-left:10px;"><small>ArrayList</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwCDM"><small style="margin-left:10px;">String</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwInt" style="margin-left:10px;"><small>StringBuilder</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwInt" style="margin-left:10px;"><small>Struct</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="active">
+                                Sequential Access
+                                <div id="toggleSequentialAccess" style="height: auto;width:150px;">
+                                    <div class="form-group" style="margin-bottom:6px;">
+                                        <div>
+                                            <a href="#/bwTest" style="margin-left:10px;"><small>List</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwUAT" style="margin-left:10px;"><small>LinkedList</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwCDM"><small style="margin-left:10px;">HashTable</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwInt" style="margin-left:10px;"><small>Dictionary</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwInt" style="margin-left:10px;"><small>SortedList</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwInt" style="margin-left:10px;"><small>Stack</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwInt" style="margin-left:10px;"><small>Queue</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="col-md-10">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pnlExecute" role="tab">Execute</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pnlCode" role="tab">Code</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pnlNotes" role="tab">Notes</a>
+            </li>
+        </ul>
+
+        @RenderBody()
+    </div>
+</div>
+

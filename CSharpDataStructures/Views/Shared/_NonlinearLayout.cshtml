@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Nonlinear Collections";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Nonlinear Collections</h4>
+<p align="justify">
+    A Nonlinear collection hold elements that do not have a positional order within the collection. 
+    Nonlinear collections can be either Hierarchical or Grouped collections.
+</p>
+<div class="row">
+    <div class="col-md-2">
+        <nav class="navbar navbar-left" role="navigation">
+            <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                        <ul class="nav navbar-nav" id="sidenav01">
+                            <li class="active">
+                                Hierarchical
+                                <div id="toggleDataAccess" style="height: auto;width:150px;">
+                                    <div class="form-group" style="margin-bottom:6px;">
+                                        <div>
+                                            <a href="#/bwTest" style="margin-left:10px;"><small>Tree</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwUAT" style="margin-left:10px;"><small>BinaryTree</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwCDM"><small style="margin-left:10px;">Heap</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="active">
+                                Grouped
+                                <div id="toggleSequentialAccess" style="height: auto;width:150px;">
+                                    <div class="form-group" style="margin-bottom:6px;">
+                                        <div>
+                                            <a href="#/bwTest" style="margin-left:10px;"><small>Set</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwUAT" style="margin-left:10px;"><small>Graph</small></a>
+                                        </div>
+                                        <div>
+                                            <a href="#/bwCDM"><small style="margin-left:10px;">Network</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="col-md-10">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pnlExecute" role="tab">Execute</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pnlCode" role="tab">Code</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pnlNotes" role="tab">Notes</a>
+            </li>
+        </ul>
+
+        @RenderBody()
+    </div>
+</div>
