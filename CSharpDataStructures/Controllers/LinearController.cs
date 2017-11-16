@@ -9,5 +9,10 @@ namespace CSharpDataStructures.Controllers
         {
             return View();
         }
+
+        public ActionResult Array()
+        {
+            return View();
+        }
     }
 }

@@ -196,6 +196,7 @@
     <Content Include="Views\Shared\_LinearLayout.cshtml" />
     <Content Include="Views\Shared\_NonlinearLayout.cshtml" />
     <Content Include="Views\Nonlinear\Home.cshtml" />
+    <Content Include="Views\Linear\Array.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
