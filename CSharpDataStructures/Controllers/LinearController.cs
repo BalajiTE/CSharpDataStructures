@@ -14,5 +14,10 @@ namespace CSharpDataStructures.Controllers
         {
             return View();
         }
+
+        public ActionResult ArrayList()
+        {
+            return View();
+        }
     }
 }

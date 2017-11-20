@@ -435,7 +435,10 @@
     </div>
 
     <div class="tab-pane" id="pnlNotes" role="tabpanel" style="margin-top:5px;">
-        <div class="row" style="margin-left:10px;">
+        <p align="justify">
+            Derives from System.Array namespace
+        </p>
+        <p align="justify">
             <u>Length</u>:  Returns total number of elements from all dimensions.
             <br />
             <u>GetLength</u>: Returns number of elements of a specified dimension.
@@ -445,44 +448,34 @@
             <u>GetType</u>: Returns the type of current array instance.
             <br />
             <u>GetElementType</u>: Returns the actual data type of current array address instance.
-        </div> <br />
-        <div class="row" style="margin-left:10px;">
-            <p align="justify"> <u>Array Types</u>: Onedimensional, Multidimensional, Parameter, and Jagged Arrays</p>
-        </div>
-        <div class="row" style="margin-left:10px;">
-            <p align="justify">
-                <u>Multidimensional Arrays</u>:
-                C# can have up to 32 dimensions. These are declared by providing the upper bound of each of the dimensions of the
-                array. The two dimentional declaration: int[,] grades = new int[4,5]; declares an array that consists of
-                4 rows and 5 columns. Setting and Getting multidimensional arrays are same as single dimensional arrays.
-            </p>
-        </div>
-        <div class="row" style="margin-left:10px;">
-            <p align="justify">
-                <u>Parameter Arrays</u>:
-                There are times when you want to write a method definition that allows an optional number of parameters. Parameter
-                Arrays helps you do this. ParamArray is the keyword to define a parameter array.
-                Declaration: public int sumNums(params int[] nums)
-            </p>
-        </div>
-        <div class="row" style="margin-left:10px;">
-            <p align="justify">
-                <u>Jagged Arrays</u>:
-                A jagged array is an arrays of arrays where each row of an array is made up of an array. Each dimension of a jagged
-                array is a one dimensional array. It is called as jagged because the number of elements in each row may be different.
-            </p>
-            <p align="justify">
-                int [ ] [ ] jagged = new int[12][ ]; <br /><br />
-                The first set of paranthesis indicates the number of rows and the second set of paranthesis left blank to hold the 
-                one-dimensional array that is stored in each row.
-            </p>
-        </div>
-        <div class="row"    style="margin-left:10px;">
-            <p align="justify">
-                <u>Multidimensional Vs Jagged</u>:
-                Multidimensional contains same number of cols in each row, whereas Jagged arrays can have different number of
-                cols as the second paranthesis of the definition contains a onedimensional array
-            </p>
-        </div>
+        </p>
+        <p align="justify"> <u>Array Types</u>: Onedimensional, Multidimensional, Parameter, and Jagged Arrays</p>
+        <p align="justify">
+            <u>Multidimensional Arrays</u>:
+            C# can have up to 32 dimensions. These are declared by providing the upper bound of each of the dimensions of the
+            array. The two dimentional declaration: int[,] grades = new int[4,5]; declares an array that consists of
+            4 rows and 5 columns. Setting and Getting multidimensional arrays are same as single dimensional arrays.
+        </p>
+        <p align="justify">
+            <u>Parameter Arrays</u>:
+            There are times when you want to write a method definition that allows an optional number of parameters. Parameter
+            Arrays helps you do this. ParamArray is the keyword to define a parameter array.
+            Declaration: public int sumNums(params int[] nums)
+        </p>
+        <p align="justify">
+            <u>Jagged Arrays</u>:
+            A jagged array is an arrays of arrays where each row of an array is made up of an array. Each dimension of a jagged
+            array is a one dimensional array. It is called as jagged because the number of elements in each row may be different.
+        </p>
+        <p align="justify">
+            int [ ] [ ] jagged = new int[12][ ]; <br /><br />
+            The first set of paranthesis indicates the number of rows and the second set of paranthesis left blank to hold the 
+            one-dimensional array that is stored in each row.
+        </p>
+        <p align="justify">
+            <u>Multidimensional Vs Jagged</u>:
+            Multidimensional contains same number of cols in each row, whereas Jagged arrays can have different number of
+            cols as the second paranthesis of the definition contains a onedimensional array
+        </p>
     </div>
 </div>

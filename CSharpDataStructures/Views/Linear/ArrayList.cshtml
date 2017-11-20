@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Array List";
+    Layout = "~/Views/Shared/_LinearLayout.cshtml";
+}
+<div class="tab-content">
+    <div class="tab-pane active" id="pnlSyntax" role="tabpanel" style="margin-top:5px;">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <u>Initialization</u>:
+                </div>
+                <div class="col-sm-8" style="margin-left:20px;">
+                    syntax: ArrayList names = new ArrayList();
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <u>Members</u>:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Add</u>: names.Add("John");
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>AddRange</u>: ArrayList moreNames = new ArrayList();
+                    moreNames.Add("Terrill");
+                    moreNames.Add("Donnie");
+                    <br />
+                    names.AddRange(moreNames);
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Capacity</u>: names.Capacity; //(use ToString() to convert)
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Clear</u>: names.Clear();
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Contains</u>: names.Contains("Donnie");
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>CopyTo</u>: names.CopyTo(newArray, 2); // will copy first two elements of names to newArray
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Count</u>: names.Count;
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>GetEnumerator</u>: names.GetEnumerator();
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>GetRange</u>: names.GetRange(2,3); // Returns three items starting from 2
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>IndexOf</u>: names.IndexOf("Donnie");
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Insert</u>: names.Insert(1, "Kate"); // inserts kate at 1 index
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>InsertRange</u>: ArrayList moreNames = new ArrayList();
+                    moreNames.Add("Jack");
+                    moreNames.Add("Jill"); <br />
+                    names.InsertRange(4, moreName);                    
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Item</u>: names.Item(i); // where i represents the index of the ArrayList
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Remove</u>: names.Remove("Jack");
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>RemoveAt</u>: names.RemoveAt(1); 
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Reverse</u>: names.Reverse();
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>Sort</u>: names.Sort(); 
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>ToArray</u>: names.ToArray();
+                </div>
+                <div class="col-sm-push-1 col-sm-9">
+                    <u>TrimToSize</u>: names.TrimToSize(); // Trims to the size of the count
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="pnlNotes" role="tabpanel" style="margin-top:5px;">
+        <p align="justify">
+            Derives from <u>System.Collections namespace</u>.
+            Static arrays has a limitation when the size is unknown in advance or the size changes during execution. ArrayList 
+            is a type of array which solves this problem as this automatically resizes itself when the array is out of storage 
+            space.
+            The ArraList has a <u>Capacity</u> property that stores its size, which is 0 elements by default and increases by
+            4 elements as needed.
+        </p>
+        <p align="justify">
+            <u>Members</u>: <br />
+            <u>Add()</u>: Adds an element <br />
+            <u>AddRange()</u>: Adds the elements of a collection to the end of the ArrayList <br />
+            <u>Capacity</u>: Stores the number of elements an ArrayList can hold <br />
+            <u>Clear()</u>: Removes all elements from the ArrayList <br />
+            <u>Contains()</u>: Determines if a specified items is in the ArrList <br />
+            <u>CopyTo()</u>: Copies the ArrayList or a segment of it to an array <br />
+            <u>Count</u>: Returns the number of elements currently in the ArrayList <br />
+            <u>GetEnumerator()</u>: Returns an enumerator to iterate over the ArrayList <br />
+            <u>GetRange()</u> Returns a subset of the ArrayList as an ArrayList <br />
+            <u>IndexOf()</u>: Returns the index of the first occurrence of the specified item <br />
+            <u>Insert()</u>: Inserts an element into the ArrayList at a specified index <br />
+            <u>InsertRange()</u>Inserts the elements of a collection into the ArrayList starting at the index <br />
+            <u>Item()</u>: Gets or sets an element at the specified index <br />
+            <u>Remove()</u> Removes the first occurrence of the spcified item <br />
+            <u>RemoveAt()</u>: Removes an element at the specified index <br />
+            <u>Reverse()</u>: Reverses the order of the elements in the ArrayList <br />
+            <u>Sort</u>: Alphabatically sorts the elements in the ArrayList <br />
+            <u>ToArray()</u> Copies the elements of the ArrayList to an array <br />
+            <u>TrimToSize()</u>: Sets the capacity of the ArrayList to the number of elements <br />
+        </p>
+    </div>
+</div>
