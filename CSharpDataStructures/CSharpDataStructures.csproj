@@ -198,6 +198,7 @@
     <Content Include="Views\Nonlinear\Home.cshtml" />
     <Content Include="Views\Linear\Array.cshtml" />
     <Content Include="Views\Linear\ArrayList.cshtml" />
+    <Content Include="Views\Linear\String.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

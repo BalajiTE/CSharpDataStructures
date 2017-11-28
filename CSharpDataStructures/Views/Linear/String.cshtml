@@ -1,0 +1,145 @@
+﻿@{
+    ViewBag.Title = "String";
+    Layout = "~/Views/Shared/_LinearLayout.cshtml";
+}
+
+<div class="tab-content">
+    <div class="tab-pane active" id="pnlSyntax" role="tabpanel" style="margin-top:5px;">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-1">
+                    <u>Initialization</u>:
+                </div>
+                <div class="col-sm-9">
+                    String(s) can be defined as below:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-3">
+                    Using String assignment
+                </div>
+                <div class="col-sm-7">
+                    String name = "Jennifer Ingram";
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-3">
+                    Using character array
+                </div>
+                <div class="col-sm-7">
+                    char [] charArr1 = {'\u2200','\u2202','\u200F','\u2205'}; <br />
+                    String szMathSymbols = new String(charArr1);
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-9">
+                    Using portion of character array and repeating a character
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-3 col-sm-7">
+                    String szGreekOmega = new String(new char [] {'\u03A9','\u03A9','\u03A9'},2,1);
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-9">
+                    Using a pointer to a character array
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-9">
+                    Instantiating a string from a pointer and a range of an array
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-9">
+                    Instantiating a string from a pointer to a signed byte array
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-1">
+                    <u>Fields</u>:
+                </div>
+                <div class="col-sm-1">
+                    <u>Empty:</u>
+                </div>
+                <div class="col-sm-2">
+                    String test = null;
+                </div>
+                <div class="col-sm-3">
+                    String test = String.Empty;
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-1">
+                    <u>Properties</u>:
+                </div>
+                <div class="col-sm-1">
+                    <u>Chars:</u>
+                </div>
+                <div class="col-sm-2">
+                    String test = null;
+                </div>
+                <div class="col-sm-3">
+                    String test = String.Empty;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-1">
+                    <u>Length:</u>
+                </div>
+                <div class="col-sm-push-1 col-sm-3">
+                    string characters = "abc";
+                </div>
+                <div class="col-sm-4">
+                    var count = characters.Length; // returns 3
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-pane" id="pnlNotes" role="tabpanel" style="margin-top:5px;">
+        <div class="row">
+            <p style="margin-left:10px;" align="justify">
+                Derives from <u>System.String namespace</u>.
+                C# strings allows to place escape characters inside the strings. Escape characters are used to place
+                format characters such as line breaks and tab stops within a string. An escape character begins with a
+                backslash (\) and is followed by a single letter that represents the format.
+            </p>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-1">
+                    <u>Fields</u>:
+                </div>
+                <div class="col-sm-10">
+                    <u>Empty:</u> Represents the empty string. This is read-only and can be checked for a value using
+                    IsNullOrEmpty method
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-1">
+                    <u>Properties</u>:
+                </div>
+                <div class="col-sm-10">
+                    <u>Chars:</u> Gets the Char object at a specified position in the current String object.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-push-1 col-sm-10">
+                    <u>Length:</u> Gets the number of characters in the current String object.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
